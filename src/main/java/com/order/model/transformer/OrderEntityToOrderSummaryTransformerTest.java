@@ -53,8 +53,6 @@ public class OrderEntityToOrderSummaryTransformerTest {
 
     @Test
     public void transform_orderEntityIsNull_throwsIllegalArgumentException() {
-//	org.hamcrest.Matcher // its stupid, but I can't add it to the main classpath yet.
-
 	thrown.expect(IllegalArgumentException.class);
 	thrown.expectMessage("Order entity should not be null");
 	_target.transform(null);
